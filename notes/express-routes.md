@@ -7,7 +7,7 @@ const express = require('express');
 
 const app = express();
 
-/* Middlewares that will handle the request were separated into two different files */
+/* Middlewares that will handle the request were splitted into two different files */
 const adminRouter = require('./routes/admin');
 const shopRouter = require('./routes/shop');
 
