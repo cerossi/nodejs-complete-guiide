@@ -16,7 +16,7 @@ app.use('/admin', adminData.routes);
 app.use(shopRouter);
 
 app.use((req, res, next) => {
-    res.render('404');
+    res.status(404).render('404');
 })
 
 app.listen(3000);
