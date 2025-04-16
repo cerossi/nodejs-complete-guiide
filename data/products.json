@@ -1,1 +1,11 @@
-[{"title":"Mastering Algorithms & Data Structures"},{"title":"Another Brick In The Wall, 2nd Edition"},{"title":"The 4th Book of IT"}]
+[
+  { "title": "Mastering Algorithms & Data Structures" },
+  { "title": "Another Brick In The Wall, 2nd Edition" },
+  { "title": "The 4th Book of IT" },
+  {
+    "title": "Efficient Node.js",
+    "imageUrl": "https://learning.oreilly.com/library/cover/9781098145187/250w/",
+    "description": "Take your web development skills from browser to server with Node.js, the popular backend framework used by more than 10 million developers at companies like Amazon, Netflix, and LinkedIn, to name just a few. If you're comfortable working with JavaScript, this practical guide from Samer Buna will show you how to effectively build and maintain even the most complex Node.js applications.",
+    "price": "9.99"
+  }
+]

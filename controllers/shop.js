@@ -2,7 +2,7 @@ const Products = require('../models/product');
 
 exports.getCart = (req, res, next) => {
     res.render('shop/cart', {
-        pageTitle: 'Cart',
+        pageTitle: 'Your Cart',
         path: '/cart',
     });
 };
@@ -18,6 +18,13 @@ exports.getIndex = (req, res, next) => {
     res.render('shop/index',{
         pageTitle: 'IT Shop', 
         path: '/'
+    });
+};
+
+exports.getOrders = (req, res, next) => {
+    res.render('shop/orders',{
+        pageTitle: 'Your Orders', 
+        path: '/orders'
     });
 };
 
