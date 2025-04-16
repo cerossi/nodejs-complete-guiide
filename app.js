@@ -6,17 +6,18 @@ const app = express();
 app.set('view engine', 'ejs');
 app.set('views', 'views');
 
-const adminData = require('./routes/admin');
+const adminRouter = require('./routes/admin');
 const shopRouter = require('./routes/shop');
+
+const utilController = require('./controllers/util');
+
 
 app.use(express.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'public')));
 
-app.use('/admin', adminData.routes);
+app.use('/admin', adminRouter);
 app.use(shopRouter);
 
-app.use((req, res, next) => {
-    res.status(404).render('404', { pageTitle: 'Page not found' });
-})
+app.use(utilController.getPageNotFound);
 
 app.listen(3000);
