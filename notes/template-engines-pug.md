@@ -1,4 +1,4 @@
-# Template Engines
+# Using Pug as Template Engines
 
 * Simple HTML using pug:
 
